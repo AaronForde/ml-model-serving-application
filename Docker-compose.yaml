@@ -1,0 +1,6 @@
+services:
+  ml-serving-application:
+    build: ./Dockerfile
+    container_name: ml-serving-application
+    ports: 
+      - '3000:3000'   
