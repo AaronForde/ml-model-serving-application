@@ -15,5 +15,9 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v3
 
-            - name: Run tests
-              run: echo "Running tests..."
+            - name: Run tests in the test directory
+              run: |
+                cd test
+                echo "Running tests in the test directory..."
+                pytest
+            
